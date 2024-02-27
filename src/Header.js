@@ -1,6 +1,8 @@
 import './header.css'; // Import your CSS file
 import { useState } from 'react';
 import './app.css'
+import { Link } from 'react-router-dom';
+
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -43,8 +45,10 @@ export default function Header() {
           </svg>
         </div>
         <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
-          <div ><a  className='custom-link' href="/login" id="loginBtn">Log in</a></div>
-          <div><a className='custom-link' href="/register" id="signupBtn">Sign Up</a></div>
+
+        <div><Link to="/login" className='custom-link' id="loginBtn">Log in</Link></div>
+      <div><Link to="/register" className='custom-link' id="signupBtn">Sign Up</Link></div>
+
         </div>
       </header>
     </div>

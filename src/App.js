@@ -32,7 +32,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
 
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/" element={<FirstPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/venue/list" element={<VenueListPage />} />
