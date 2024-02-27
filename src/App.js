@@ -19,7 +19,7 @@ import ApplicationsPage from "./pages/ApplicationsPage";
 
 
 //axios.defaults.baseURL = process.env.BASE_URL + `:` + process.env.BACKEND_PORT;
-axios.defaults.baseURL = "http://127.0.0.1:4000";
+axios.defaults.baseURL = "https://eventify-backend-l6fy.onrender.com";
 
 
 function App() {
